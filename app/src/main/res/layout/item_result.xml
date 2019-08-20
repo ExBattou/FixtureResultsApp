@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:background="#FFFFFF"
+               android:layout_margin="10dp"
+               android:padding="10dp"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/competition_name_result"
+            android:textStyle="bold"
+            android:text="LA CHAMPIONS LIGA"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stadium_name_result"
+            android:text="old trafford"
+            app:layout_constraintTop_toBottomOf="@id/competition_name_result"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/competition_date_result"
+            android:text="a really long date"
+            app:layout_constraintTop_toBottomOf="@id/competition_name_result"
+            app:layout_constraintStart_toEndOf="@id/stadium_name_result"
+
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/home_team_result"
+            android:text="Man. United"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stadium_name_result"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/away_team_result"
+            android:layout_margin="20dp"
+            android:text="CHELSEA"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/home_team_result"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_score_result"
+            android:text="1"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="@id/home_team_result"
+            app:layout_constraintBottom_toBottomOf="@id/home_team_result"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/away_score_result"
+            android:text="1"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="@id/away_team_result"
+            app:layout_constraintBottom_toBottomOf="@id/away_team_result"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
